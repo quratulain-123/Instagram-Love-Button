@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Insta Love Btn</title>
+    <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css"
+    rel="stylesheet"/>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <img src="C:\Users\hp\Downloads\everything\man.jpg" alt="">
+    <i class="ri-heart-3-fill"></i>
+</div>
+    <script>
+        let cont = document.querySelector(".container")
+        let love = document.querySelector("i")
+
+        cont.addEventListener("dblclick" , function(){
+             love.style.transform = "translate(-50% , -50%) scale(1)"
+             love.style.opacity = 0.8
+        setTimeout(function(){
+            love.style.opacity = 0
+        }, 1000)
+        setTimeout(function(){
+            love.style.transform = "translate(-50% , -50%) scale(0)"
+        }, 2000)
+        })
+
+    </script>
+</body>
+</html>

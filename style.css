@@ -1,0 +1,38 @@
+html, body{
+    width: 80%;
+    height: 80%;
+}
+body{
+ justify-content: center;
+ align-items: center;
+ display: flex;
+background-color: seagreen;
+position: absolute;
+}
+.container{
+    position: relative;
+    top: 10%;
+    left: 10%;
+    width: 250px;
+    height: 350px;
+    background-color: #fff;
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    
+}
+.container img{
+     height: 100%;
+     width: 100%;
+     object-fit: cover;
+}
+.container i{
+    color: #fff;
+     top: 50%;
+     left: 50%;
+     position: absolute;
+     font-size: 70px;
+     transform: translate(-50% , -50%) scale(0);
+     opacity: 0;
+     transition: transform ease 0.5s;
+}
